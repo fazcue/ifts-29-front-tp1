@@ -2,13 +2,18 @@ import { members } from '../data/members.js'
 import { MemberCard } from './MemberCard.js'
 
 function MembersList() {
-	const memberSection = document.getElementById('members')
+	const main = document.getElementsByTagName('main')[0]
+
+	const section = document.createElement('section')
+	section.id = 'members'
 
 	// add members card
 	members.forEach((member) => {
 		const memberCard = MemberCard(member)
-		memberSection.append(memberCard)
+		section.append(memberCard)
 	})
+
+	main.append(section)
 }
 
 export { MembersList }
