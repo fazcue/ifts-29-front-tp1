@@ -1,13 +1,13 @@
 const BASE_URL = 'integrante.html'
 
-function MemberCard(member) {
+function MemberItem(member) {
 	// elements
 	const a = document.createElement('a')
 	const div = document.createElement('div')
 	const h3 = document.createElement('h3')
 
 	// classes
-	div.classList.add('member-card')
+	div.classList.add('member-item')
 
 	// content
 	a.href = `${BASE_URL}?slug=${member.slug}`
@@ -20,4 +20,4 @@ function MemberCard(member) {
 	return a
 }
 
-export { MemberCard }
+export { MemberItem }

@@ -1,5 +1,5 @@
-import { members } from '../data/members.js'
-import { MemberCard } from './MemberCard.js'
+import { members } from '../../data/members.js'
+import { MemberItem } from './MemberItem.js'
 
 function MembersList() {
 	const main = document.getElementsByTagName('main')[0]
@@ -9,8 +9,8 @@ function MembersList() {
 
 	// add members card
 	members.forEach((member) => {
-		const memberCard = MemberCard(member)
-		section.append(memberCard)
+		const memberItem = MemberItem(member)
+		section.append(memberItem)
 	})
 
 	main.append(section)
