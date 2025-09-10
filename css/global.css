@@ -78,7 +78,7 @@ main {
 	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
-.member-card {
+.member-item {
 	display: flex;
 	justify-content: center;
 	background: var(--color-brand);
@@ -88,7 +88,7 @@ main {
 	transition: all ease-in-out 0.2s;
 }
 
-.member-card:hover {
+.member-item:hover {
 	transform: translateY(-5px);
 	opacity: 1;
 }
