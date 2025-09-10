@@ -1,4 +1,4 @@
-import { navLinks } from '../data/site.js'
+import { navLinks } from '../../data/site.js'
 
 function Navigation() {
 	const nav = document.createElement('nav')
